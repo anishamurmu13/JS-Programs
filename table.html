@@ -1,0 +1,79 @@
+<<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student data table</title>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+      }
+
+      td,
+      th {
+        border: 1px solid #ffffff;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #86abfc;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <script>
+          var tableHead = ["STUDENT NAME", "ROLL NUMBER", "BRANCH"];
+          for (let i = 0; i < tableHead.length; i++) {
+            document.write("<th>" + tableHead[i] + "</th> ");
+          }
+        </script>
+      </tr>
+      <tr>
+        <script>
+          var row1 = ["Sweta B Sahu", "19CSE063", "CSE"];
+          for (let i = 0; i < row1.length; i++) {
+            document.write("<td>" + row1[i] + "</td>");
+          }
+        </script>
+      </tr>
+      <tr>
+        <script>
+          var row2 = ["Sritam Subudhi", "19CSE098", "CSE"];
+          for (let i = 0; i < row1.length; i++) {
+            document.write("<td>" + row2[i] + "</td>");
+          }
+        </script>
+      </tr>
+      <tr>
+        <script>
+          var row3 = ["Amisha Mohapatra", "19BT013", "BT"];
+          for (let i = 0; i < row1.length; i++) {
+            document.write("<td>" + row3[i] + "</td>");
+          }
+        </script>
+      </tr>
+      <tr>
+        <script>
+          var row4 = ["Pragyan Paramita Behera", "19ECE052", "ECE"];
+          for (let i = 0; i < row1.length; i++) {
+            document.write("<td>" + row4[i] + "</td>");
+          }
+        </script>
+      </tr>
+      <tr>
+        <script>
+          var row5 = ["Truptirani Mohapatro", "19AGE015", "AGE"];
+          for (let i = 0; i < row1.length; i++) {
+            document.write("<td>" + row5[i] + "</td>");
+          }
+        </script>
+      </tr>
+    </table>
+  </body>
+</html>
